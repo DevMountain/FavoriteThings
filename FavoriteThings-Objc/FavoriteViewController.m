@@ -1,21 +1,21 @@
 //
-//  FavoirteViewController.m
+//  FavoriteViewController.m
 //  FavoriteThings-Objc
 //
 //  Created by Joshua Howland on 8/23/14.
 //  Copyright (c) 2014 DevMountain. All rights reserved.
 //
 
-#import "FavoirteViewController.h"
+#import "FavoriteViewController.h"
 
-@interface FavoirteViewController ()
+@interface FavoriteViewController ()
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UILabel *label;
 
 @end
 
-@implementation FavoirteViewController
+@implementation FavoriteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

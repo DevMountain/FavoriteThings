@@ -1,5 +1,5 @@
 //
-//  FavoirteViewController.h
+//  FavoriteViewController.h
 //  FavoriteThings-Objc
 //
 //  Created by Joshua Howland on 8/23/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavoirteViewController : UIViewController
+@interface FavoriteViewController : UIViewController
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FavoirteViewController.h"
+#import "FavoriteViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    FavoirteViewController *viewController = [FavoirteViewController new];
+    FavoriteViewController *viewController = [FavoriteViewController new];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navigationController;
     

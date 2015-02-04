@@ -11,4 +11,6 @@
 
 @interface FavoriteThingsTableViewDataSource : NSObject <UITableViewDataSource>
 
+- (void)registerTableView:(UITableView *)tableview;
+
 @end

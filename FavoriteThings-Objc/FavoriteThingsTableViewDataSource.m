@@ -10,16 +10,18 @@
 
 @implementation FavoriteThingsTableViewDataSource
 
+- (void)registerTableView:(UITableView *)tableview {
+    [tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self favoriteThings].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [UITableViewCell new];
-    }
+    
     cell.textLabel.text = [self favoriteThings][indexPath.row];
     return cell;
 }

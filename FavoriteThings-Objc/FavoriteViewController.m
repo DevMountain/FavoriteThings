@@ -23,8 +23,10 @@
     self.tableView = [UITableView new];
     self.tableView.dataSource = self;
     self.tableView.frame = self.view.bounds;
-    [self.view addSubview:self.tableView];
     
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    [self.view addSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,12 +7,10 @@
 //
 
 #import "FavoriteViewController.h"
-#import "FavoriteThingsTableViewDataSource.h"
 
-@interface FavoriteViewController ()
+@interface FavoriteViewController () <UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) FavoriteThingsTableViewDataSource *dataSource;
 
 @end
 
@@ -22,10 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.dataSource = [FavoriteThingsTableViewDataSource new];
-    
     self.tableView = [UITableView new];
-    self.tableView.dataSource = self.dataSource;
+    self.tableView.dataSource = self;
     self.tableView.frame = self.view.bounds;
     [self.view addSubview:self.tableView];
     
@@ -36,8 +32,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeText:(id)sender {
+# pragma mark - UITableView Datasource Methods
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self favoriteThings].count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [UITableViewCell new];
+    }
+    cell.textLabel.text = [self favoriteThings][indexPath.row];
+    return cell;
+}
+
+- (NSArray *)favoriteThings {
+    return @[@"Model S", @"BYU Football", @"BYU Basketball", @"iPhone", @"Mac", @"Podcasts", @"LOST"];
 }
 
 @end

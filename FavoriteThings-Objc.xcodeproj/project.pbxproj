@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71C56FB719A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C56FB619A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.m */; };
 		71DE96EC19A8D5360021E6F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE96EB19A8D5360021E6F7 /* main.m */; };
 		71DE96EF19A8D5360021E6F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE96EE19A8D5360021E6F7 /* AppDelegate.m */; };
 		71DE96F119A8D5360021E6F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE96F019A8D5360021E6F7 /* Images.xcassets */; };
@@ -26,8 +25,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		71C56FB519A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteThingsTableViewDataSource.h; sourceTree = "<group>"; };
-		71C56FB619A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteThingsTableViewDataSource.m; sourceTree = "<group>"; };
 		71DE96E619A8D5360021E6F7 /* FavoriteThings-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FavoriteThings-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DE96EA19A8D5360021E6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DE96EB19A8D5360021E6F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,8 +81,6 @@
 				71DE96EE19A8D5360021E6F7 /* AppDelegate.m */,
 				71DE970919A8D7F20021E6F7 /* FavoriteViewController.h */,
 				71DE970A19A8D7F20021E6F7 /* FavoriteViewController.m */,
-				71C56FB519A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.h */,
-				71C56FB619A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.m */,
 				71DE96F019A8D5360021E6F7 /* Images.xcassets */,
 				71DE96E919A8D5360021E6F7 /* Supporting Files */,
 			);
@@ -216,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DE96EF19A8D5360021E6F7 /* AppDelegate.m in Sources */,
-				71C56FB719A8DA2B00C7B895 /* FavoriteThingsTableViewDataSource.m in Sources */,
 				71DE970B19A8D7F20021E6F7 /* FavoriteViewController.m in Sources */,
 				71DE96EC19A8D5360021E6F7 /* main.m in Sources */,
 			);
